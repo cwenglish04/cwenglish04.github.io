@@ -112,7 +112,7 @@ ${portfolioData.about.description}
   },
 
   education: () => {
-    let output = '<span class="highlight">Education</span>\n' + '='.repeat(50) + '\n\n';
+    let output = '<span class="highlight">Education</span>\n' + '='.repeat(50) + '\n';
     portfolioData.education.forEach(edu => {
       output += `<div class="job-entry">
 <span class="success">${edu.degree}</span>
