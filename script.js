@@ -91,7 +91,6 @@ const commands = {
   <span class="command-item"><span class="success">whoami</span>         - User information</span>
   <span class="command-item"><span class="success">clear</span>          - Clear terminal</span>
   <span class="command-item"><span class="success">history</span>        - Command history</span>
-  <span class="command-item"><span class="success">ls</span>             - List files</span>
   <span class="command-item"><span class="success">exit</span>           - Exit terminal</span>
   <span class="command-item"><span class="success">sudo</span>           - Try it ;)</span>
 </div>
@@ -166,7 +165,7 @@ ${cert.description}
   },
 
   skills: () => {
-    let output = '<span class="highlight">Technical Skills</span>\n' + '='.repeat(50) + '\n\n';
+    let output = '<span class="highlight">Technical Skills</span>\n' + '='.repeat(50) + '\n';
     output += '<div class="command-list">';
     portfolioData.skills.forEach(skill => {
       output += `<span class="success">▸ ${skill}</span>\n`;
@@ -232,10 +231,6 @@ ${'='.repeat(50)}
       '<span class="warning">guest is not in the sudoers file. This incident will be reported... to nobody 😂</span>'
     ];
     return responses[Math.floor(Math.random() * responses.length)];
-  },
-
-  ls: () => {
-    return `<span class="success">about.txt</span>  <span class="success">education.txt</span>  <span class="success">experience.txt</span>  <span class="success">projects.txt</span>  <span class="success">certifications.txt</span>  <span class="success">skills.txt</span>  <span class="success">contact.txt</span>`;
   },
 
   exit: () => {
