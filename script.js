@@ -256,7 +256,7 @@ function init() {
 </pre>
 
 <span class="highlight">Welcome to Connor English's Terminal Portfolio</span>
-<span class="prompt">Cybersecurity Professional | IT Specialist | Augusta University</span>
+<span class="prompt">Viceroy Scholar | Cybersecurity Student | Augusta University</span>
 
 Type <span class="success">'help'</span> to see available commands
 Type <span class="success">'about'</span> to learn more about me
