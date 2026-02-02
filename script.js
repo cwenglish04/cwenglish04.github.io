@@ -91,6 +91,7 @@ const commands = {
   <span class="command-item"><span class="success">whoami</span>         - User information</span>
   <span class="command-item"><span class="success">clear</span>          - Clear terminal</span>
   <span class="command-item"><span class="success">history</span>        - Command history</span>
+  <span class="command-item"><span class="success">ls</span>             - List files</span>
   <span class="command-item"><span class="success">exit</span>           - Exit terminal</span>
   <span class="command-item"><span class="success">sudo</span>           - Try it ;)</span>
 </div>
@@ -111,7 +112,7 @@ ${portfolioData.about.description}
   },
 
   education: () => {
-    let output = '<span class="highlight">Education</span>\n' + '='.repeat(50) + '\n';
+    let output = '<span class="highlight">Education</span>\n' + '='.repeat(50) + '\n\n';
     portfolioData.education.forEach(edu => {
       output += `<div class="job-entry">
 <span class="success">${edu.degree}</span>
@@ -165,7 +166,7 @@ ${cert.description}
   },
 
   skills: () => {
-    let output = '<span class="highlight">Technical Skills</span>\n' + '='.repeat(50) + '\n';
+    let output = '<span class="highlight">Technical Skills</span>\n' + '='.repeat(50) + '\n\n';
     output += '<div class="command-list">';
     portfolioData.skills.forEach(skill => {
       output += `<span class="success">▸ ${skill}</span>\n`;
@@ -233,6 +234,10 @@ ${'='.repeat(50)}
     return responses[Math.floor(Math.random() * responses.length)];
   },
 
+  ls: () => {
+    return `<span class="success">about.txt</span>  <span class="success">education.txt</span>  <span class="success">experience.txt</span>  <span class="success">projects.txt</span>  <span class="success">certifications.txt</span>  <span class="success">skills.txt</span>  <span class="success">contact.txt</span>`;
+  },
+
   exit: () => {
     return `<span class="warning">Closing terminal session...</span>  <span class="prompt">Goodbye!</span>`;
   }
@@ -251,7 +256,7 @@ function init() {
 </pre>
 
 <span class="highlight">Welcome to Connor English's Terminal Portfolio</span>
-<span class="prompt">Viceroy Scholar | Cybersecurity Student | Augusta University</span>
+<span class="prompt">Cybersecurity Professional | IT Specialist | Augusta University</span>
 
 Type <span class="success">'help'</span> to see available commands
 Type <span class="success">'about'</span> to learn more about me
