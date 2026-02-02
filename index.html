@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Vstyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connor English | Terminal Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/style2.css">
 </head>
 <body>
-    <!-- Floating hearts background -->
-    <div class="heart-float" style="left: 10%; top: 15%; animation-delay: 0s;">❤️</div>
-    <div class="heart-float" style="right: 10%; top: 25%; animation-delay: 1s;">💕</div>
-    <div class="heart-float" style="left: 15%; bottom: 20%; animation-delay: 2s;">💖</div>
-    <div class="heart-float" style="right: 15%; bottom: 15%; animation-delay: 1.5s;">💗</div>
+  <div class="terminal-header">
+    <div class="terminal-button btn-close"></div>
+    <div class="terminal-button btn-minimize"></div>
+    <div class="terminal-button btn-maximize"></div>
+    <span class="terminal-title">connor@portfolio:~$</span>
+  </div>
 
-    <div class="container">
-        <div class="image-container">
-            <img src="us.jpeg" alt="Your photo" class="profile-pic">
-        </div>
-
-        <h1 class="question">Will you be my Valentine?</h1>
-
-        <div class="buttons-container">
-            <a href="Yindex.html" class="btn btn-yes">Yes</a>
-            <button class="btn btn-no" id="noBtn">No</button>
-        </div>
+  <div class="terminal-container" id="terminal-output">
+    <!-- Output will be generated here -->
+    <div class="input-line" style="padding: 0;">
+      <span class="prompt">guest@connor-portfolio:~$</span>
+      <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+      <span class="cursor" id="cursor"></span>
     </div>
+  </div>
 
-    <script src="Vscript.js"></script>
+  <script src="/assets/js/script2.js"></script>
 </body>
 </html>
